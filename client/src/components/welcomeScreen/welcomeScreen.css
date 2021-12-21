@@ -1,0 +1,98 @@
+.gallery__welcomeScreen-container {
+  height: 85vh;
+  margin: 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 30%);
+  background-image: url("https://picsum.photos/900/800");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery__welcomeScreen-container h1 {
+  margin-bottom: 1rem;
+  font-size: 50px;
+  color: transparent;
+  background-image: radial-gradient(
+    circle at 5% 20%,
+    #c2fff9 0%,
+    #71dfe7 50%,
+    #009dae 100%
+  );
+  background-clip: text;
+}
+
+.gallery__welcomeScreen-container h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3e2c41;
+}
+
+.gallery__welcomeScreen-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(90deg, #ee82ee 0%, #00d1ff 100%);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery__welcomeScreen-container h1 {
+    font-size: 34px;
+  }
+
+  .gallery__welcomeScreen-container h6 {
+    font-size: 16px;
+  }
+
+  .gallery__welcomeScreen-container a {
+    width: 85px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .gallery__welcomeScreen-container {
+    height: 55vh;
+  }
+
+  .gallery__welcomeScreen-container h1 {
+    font-size: 24px;
+  }
+
+  .gallery__welcomeScreen-container h6 {
+    font-size: 12px;
+  }
+
+  .gallery__welcomeScreen-container a {
+    width: 70px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .gallery__welcomeScreen-container h1 {
+    font-size: 18px;
+  }
+
+  .gallery__welcomeScreen-container h6 {
+    font-size: 8px;
+  }
+
+  .gallery__welcomeScreen-container a {
+    width: 60px;
+    height: 25px;
+    font-size: 8px;
+  }
+}

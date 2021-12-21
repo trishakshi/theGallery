@@ -1,0 +1,228 @@
+.gallery__navbar-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+    background: linear-gradient(90deg, #ee82ee 0%, #00d1ff 100%);
+  }
+  
+  .gallery__upload-container__closeBtn {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    color: #fff !important;
+  }
+  
+  .gallery__navbar-container__logo a {
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .gallery__navbar-container__menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .gallery__navbar-container__menu-item {
+    margin-left: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .gallery__navbar-container__menu-item__addIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gallery__navbar-container__menu-item__addIcon .MuiSvgIcon-root {
+    color: #ffffff;
+  }
+  
+  .gallery__navbar-container__menu-link {
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .gallery__navbar-container__menu-link__btn {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0.5rem 0.7rem;
+    border-radius: 3px;
+    background: #ffffff;
+    color: #3e2c41;
+    text-decoration: none;
+  }
+  
+  .gallery__navbar-container__menu__logoutBtn {
+    padding: 0.5rem 0.8rem;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: #ffffff;
+    color: #3e2c41;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  /* Image Upload CSS */
+  .gallery__upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .gallery__upload-container__image {
+    position: relative;
+    width: 360px;
+    height: 80vh;
+    border-radius: 30px;
+    background-color: #ffffff;
+  }
+  
+  .gallery__upload-container__image__zoomOut-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .gallery__upload-container__image .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .gallery__upload-container__image__zoomOut {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 30px;
+  }
+  
+  .gallery__upload-container__input-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .gallery__upload-container__input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+    background: rgba(80, 80, 80, 0.5);
+  }
+  
+  .gallery__upload-container__image__chooseFile {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .gallery__upload-container__image__chooseFile .MuiSvgIcon-root {
+    color: #ffffff;
+  }
+  
+  .gallery__upload-container__image__chooseFile input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .gallery__upload-container__input input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-left: 0.5rem;
+    color: #ffffff;
+    background: transparent;
+  }
+  
+  .gallery__upload-container__input-container button {
+    margin-right: 1rem;
+    background: linear-gradient(90deg, #ee82ee 0%, #00d1ff 100%);
+  }
+  
+  .gallery__upload-container__input-container button .MuiSvgIcon-root {
+    color: #ffffff;
+  }
+  
+  .gallery__upload-container__input ::placeholder {
+    color: #ffffff;
+  }
+  
+  .gallery__navbar-container__mobile-menu {
+    display: none;
+    position: relative;
+  }
+  
+  .gallery__navbar-container__mobile-menu__Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 110px;
+    line-height: 2.2;
+    position: absolute;
+    top: 40px;
+    right: 5px;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .gallery__navbar-container__logo a {
+      font-size: 1.5rem;
+    }
+  
+    .gallery__navbar-container__menu {
+      display: none;
+    }
+  
+    .gallery__navbar-container__menu-link {
+      color: #3e2c41;
+    }
+  
+    .gallery__navbar-container__menu-link__btn {
+      color: #ffffff;
+      background: linear-gradient(90deg, #ee82ee 0%, #00d1ff 100%);
+    }
+  
+    .gallery__navbar-container__menu-item__addIcon > .MuiSvgIcon-root {
+      color: #3e2c41;
+    }
+  
+    .gallery__navbar-container__menu__logoutBtn {
+      color: #ffffff;
+      background: linear-gradient(90deg, #ee82ee 0%, #00d1ff 100%);
+    }
+  
+    .gallery__navbar-container__mobile-menu {
+      display: block;
+      z-index: 2;
+      color: #ffffff;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .gallery__upload-container__image {
+      width: 300px;
+    }
+  }
+  

@@ -1,0 +1,139 @@
+.gallery__user-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gallery__user-container__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+    height: 86%;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px 0 rgba(80, 80, 80, 0.1);
+  }
+  
+  .gallery__user-container__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #fff;
+  }
+  
+  .gallery__user-container__header .MuiAvatar-root {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .gallery__user-container__header-content {
+    margin-left: 1rem;
+  }
+  
+  .gallery__user-container__header-content h2 {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #3e2c41;
+  }
+  
+  .gallery__user-container__header__btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .gallery__user-container__header__btns-chooseFile {
+    position: relative;
+    width: 100px;
+    height: 30px;
+  }
+  
+  .gallery__user-container__header__btns-editBtn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(90deg, #ee82ee 0%, #00d1ff 100%);
+    cursor: pointer;
+  }
+  
+  .gallery__user-container__header__btns-chooseFile input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0;
+  }
+  
+  .gallery__user-container__header__btns-updateBtn {
+    width: 100px;
+    height: 30px;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    background: linear-gradient(-90deg, #ee82ee 0%, #00d1ff 100%);
+    cursor: pointer;
+  }
+  
+  .gallery__user-container__posts {
+    flex: 1;
+    column-count: 3;
+    column-gap: 1.25rem;
+    padding: 2rem;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow-y: scroll;
+    background: linear-gradient(90deg, #ee82ee 0%, #00d1ff 100%);
+  }
+  
+  .gallery__user-container__posts-post {
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .gallery__user-container__posts-post img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .gallery__user-container__posts {
+      column-count: 2;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .gallery__user-container__header {
+      flex-direction: column;
+    }
+  
+    .gallery__user-container__header .MuiAvatar-root {
+      margin: auto;
+    }
+  
+    .gallery__user-container__header-content {
+      margin: 1rem 0;
+    }
+  
+    .gallery__user-container__header h2 {
+      text-align: center;
+    }
+  
+    .gallery__user-container__header__btns {
+      justify-content: center;
+    }
+  
+    .gallery__user-container__posts {
+      column-count: 1;
+    }
+  }
+  

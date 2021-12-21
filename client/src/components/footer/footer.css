@@ -1,0 +1,11 @@
+.gallery__footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__footer p {
+  font-size: 13px;
+  color: #3e2c41;
+}
